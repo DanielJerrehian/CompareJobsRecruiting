@@ -15,7 +15,7 @@ class CompareJobBoards:
             self.join_job_names.append(job["title"])
             
     def compare_jobs(self):
-        for job in self.join_job_names:
-            if job not in self.green_house_job_names:
-                self.jobs_missing_from_greenhouse.append(job)
+        for job_title in self.join_job_names:
+            if job_title not in self.green_house_job_names:
+                self.jobs_missing_from_greenhouse.append(job_title)
                 
